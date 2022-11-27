@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ui.RegisterActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/image_pojok_pada_login_halaman"
+            android:src="@drawable/shape"
+            app:layout_constraintBaseline_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/Tv_Ucapan_Regist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:text="@string/welcome_aboard"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/etUsername_Reg"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="35dp"
+            android:autofillHints=""
+            android:background="@drawable/input"
+            android:hint="@string/enter_username"
+            android:paddingStart="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Tv_Ucapan_Regist"
+            tools:ignore="RtlSymmetry,TextFields" />
+
+        <EditText
+            android:id="@+id/etEmail_Reg"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="35dp"
+            android:autofillHints=""
+            android:background="@drawable/input"
+            android:hint="@string/enter_email"
+            android:paddingStart="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etUsername_Reg"
+            tools:ignore="RtlSymmetry,TextFields" />
+
+        <EditText
+            android:id="@+id/etPw_Reg"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="35dp"
+            android:autofillHints=""
+            android:background="@drawable/input"
+            android:drawableEnd="@drawable/ic_baseline_visibility_off_24"
+            android:hint="@string/enter_passowrd"
+            android:inputType="textPassword"
+            android:longClickable="false"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etEmail_Reg"
+            tools:ignore="TextFields" />
+
+        <EditText
+            android:id="@+id/etPw_Cnfrm_Reg"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="35dp"
+            android:autofillHints=""
+            android:background="@drawable/input"
+            android:drawableEnd="@drawable/ic_baseline_visibility_off_24"
+            android:hint="@string/retype_your_password"
+            android:inputType="textPassword"
+            android:longClickable="false"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etPw_Reg"
+            tools:ignore="TextFields" />
+
+        <Button
+            android:id="@+id/btn_regis"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="35dp"
+            android:backgroundTint="@color/teal_200"
+            android:gravity="center"
+            android:text="@string/register"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etPw_Cnfrm_Reg" />
+
+        <TextView
+            android:id="@+id/tv_To_Login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/already_registerd_sign_in"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_regis" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Productivity Apps</string>
+    <string name="image_pojok_pada_login_halaman">image pojok pada login halaman</string>
+    <string name="enter_username">Enter username</string>
+    <string name="enter_passowrd">Enter passowrd</string>
+    <string name="Login">login</string>
+    <string name="welcome_back">Welcome Back !</string>
+    <string name="welcome_aboard">Welcome Aboard !</string>
+    <string name="enter_email">Enter email</string>
+    <string name="register">Register</string>
+    <string name="already_registerd_sign_in">Already Registerd, Sign In !</string>
+    <string name="retype_your_password">Retype Your Password</string>
+</resources>
